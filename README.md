@@ -1,9 +1,3 @@
 # ansible-tower
 
-
-
-
-
-
-
-auto update system securitys
+auto security updates for ubuntu systems
