@@ -1,16 +1,9 @@
 ---
-# - hosts: test
-#   remote_user: turbolabadmin
-#   become: yes
-#   become_method: sudo
-#   gather_facts: no
-#   tasks:
-
 - name: upgrade packages and reboot (if necessary)
   hosts: all
+  remote_user: turbolabadmin
   become: yes
   become_method: sudo
-
   tasks: # tasks are done in order
 
     # do an "apt-get update", to ensure latest package lists
