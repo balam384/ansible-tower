@@ -7,7 +7,7 @@
 #   tasks:
 
 - name: upgrade packages and reboot (if necessary)
-  hosts: test
+  hosts: all
   become: yes
   become_method: sudo
 
