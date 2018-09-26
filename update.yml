@@ -1,7 +1,6 @@
 ---
 - name: upgrade packages and reboot (if necessary)
   hosts: all
-  remote_user: turbolabadmin
   become: yes
   become_method: sudo
   tasks: # tasks are done in order
