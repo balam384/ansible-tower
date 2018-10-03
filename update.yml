@@ -33,4 +33,4 @@
     - name: fail if security updates 
       fail:
         msg: "The system may not be provisioned according to the CMDB status."
-      when: security_updates != "0"
+      when: security_updates != '0'
