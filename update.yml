@@ -30,9 +30,16 @@
     #     var: updates,security_updates
     #   when: updates.0 is defined
    
+<<<<<<< HEAD
     # - name: fail if security updates 
     #   fail:
     #     msg: "The system may not be provisioned according to the CMDB status."
     #   when: security_updates != "0"
      - name: test
        command: ifconfig
+=======
+    - name: fail if security updates 
+      fail:
+        msg: "The system may not be provisioned according to the CMDB status."
+      when: security_updates != '0'
+>>>>>>> 2b72fdbb5cfebcd00ed0f51d8ee7312448176065
